@@ -1,0 +1,31 @@
+program myprogram;
+
+         n:int;
+         i,j,k:int;
+         x,y,z:int;
+         t:array(100) of int;
+	 read n,i,j,k,x,y;
+beginprogram
+	if       [i<j] and [j<=n] and [i>=0] then
+	{
+         t(i)=i;
+         t(j)=j;
+         k=t(j);
+         t(i)=t(j);
+         t(j)=t(i);
+         
+         
+ 	}        
+         
+	else
+  	{       
+        while [x>y] loop
+        {
+          x=x-10;
+          write k;
+        }
+        endloop
+   	}
+	write t(i),t(j),i,j,x,y;       
+endprogram
+
